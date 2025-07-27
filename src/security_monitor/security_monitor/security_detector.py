@@ -1,27 +1,27 @@
 #!/usr/bin/env python3
 """
-Basic Hazard Detector Node
+Security Detector Node
 """
 
 import rclpy
 from rclpy.node import Node
 from std_msgs.msg import String
 
-class HazardDetector(Node):
+class SecurityDetector(Node):
     def __init__(self):
-        super().__init__('hazard_detector')
-        self.publisher = self.create_publisher(String, 'hazards', 10)
+        super().__init__('security_detector')
+        self.publisher = self.create_publisher(String, 'security_alerts', 10)
         self.timer = self.create_timer(1.0, self.timer_callback)
-        self.get_logger().info('Hazard detector started')
+        self.get_logger().info('Security detector started')
 
     def timer_callback(self):
         msg = String()
-        msg.data = 'No hazards detected'
+        msg.data = 'No security threats detected'
         self.publisher.publish(msg)
 
 def main(args=None):
     rclpy.init(args=args)
-    node = HazardDetector()
+    node = SecurityDetector()
     rclpy.spin(node)
     node.destroy_node()
     rclpy.shutdown()

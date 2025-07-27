@@ -1,6 +1,6 @@
-# Hazard Monitor Configuration
+# Security Monitor Configuration
 
-hazard_detection:
+security_detection:
   update_rate: 1.0  # Hz
   confidence_threshold: 0.7
   timeout: 5.0  # seconds

@@ -1,24 +1,24 @@
-# Hazard Monitor for ROS2
+# Security Monitor for ROS2
 
-A real-time hazard detection and monitoring system for autonomous vehicles using ROS2.
+A real-time security monitoring system for autonomous vehicles using ROS2.
 
 ## Overview
 
-This project aims to develop a comprehensive hazard monitoring system that can detect various types of hazards in autonomous driving scenarios, including:
+This project aims to develop a comprehensive security monitoring system that can detect various types of security threats in autonomous driving scenarios, including:
 
-- Perception hazards (sensor failures, object detection issues)
-- Localization hazards (GPS loss, SLAM drift)
-- Planning hazards (collision risk, path planning failures)
+- Perception security threats (sensor failures, object detection issues)
+- Localization security threats (GPS loss, SLAM drift)
+- Planning security threats (collision risk, path planning failures)
 - System health monitoring
-- Environmental hazards
+- Environmental security threats
 
 ## Goals
 
-- Real-time hazard detection and classification
+- Real-time security threat detection and classification
 - Multi-sensor fusion (Camera, LiDAR, IMU, GPS)
 - Integration with CARLA and Gazebo simulators
 - ROS2-based modular architecture
-- Machine learning models for hazard prediction
+- Machine learning models for security threat prediction
 
 ## Status
 
