@@ -12,9 +12,19 @@ find_package(rclcpp REQUIRED)
 find_package(rclpy REQUIRED)
 find_package(std_msgs REQUIRED)
 find_package(sensor_msgs REQUIRED)
+find_package(geometry_msgs REQUIRED)
 
 # Install Python modules
 ament_python_install_package(${PROJECT_NAME})
+
+# Install Python executables
+install(PROGRAMS
+  security_monitor/security_detector.py
+  security_monitor/sensor_monitor.py
+  security_monitor/threat_classifier.py
+  security_monitor/emergency_handler.py
+  DESTINATION lib/${PROJECT_NAME}
+)
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
@@ -22,9 +32,3 @@ if(BUILD_TESTING)
 endif()
 
 ament_package()
-
-# Install Python executables
-install(PROGRAMS
-  security_monitor/security_detector.py
-  DESTINATION lib/${PROJECT_NAME}
-)
