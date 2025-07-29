@@ -4,3 +4,24 @@ security_detection:
   update_rate: 1.0  # Hz
   confidence_threshold: 0.7
   timeout: 5.0  # seconds
+
+threat_classification:
+  threat_levels:
+    none: 0.0
+    low: 0.2
+    medium: 0.4
+    high: 0.6
+    critical: 0.8
+  
+  classification_timeout: 0.1  # seconds
+
+emergency_handling:
+  critical_threshold: 0.8
+  high_threshold: 0.6
+  emergency_stop_enabled: true
+  alert_timeout: 5.0  # seconds
+
+sensor_monitoring:
+  camera_timeout: 1.0  # seconds
+  lidar_timeout: 1.0   # seconds
+  sensor_health_check_rate: 2.0  # Hz
