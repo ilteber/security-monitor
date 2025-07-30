@@ -24,6 +24,22 @@ def generate_launch_description():
             output='screen'
         ),
         
+        # ML Detector Node
+        Node(
+            package='security_monitor',
+            executable='ml_detector.py',
+            name='ml_detector',
+            output='screen'
+        ),
+        
+        # Sensor Fusion Node
+        Node(
+            package='security_monitor',
+            executable='sensor_fusion.py',
+            name='sensor_fusion',
+            output='screen'
+        ),
+        
         # Threat Classifier Node
         Node(
             package='security_monitor',

@@ -23,6 +23,8 @@ install(PROGRAMS
   security_monitor/sensor_monitor.py
   security_monitor/threat_classifier.py
   security_monitor/emergency_handler.py
+  security_monitor/ml_detector.py
+  security_monitor/sensor_fusion.py
   DESTINATION lib/${PROJECT_NAME}
 )
 
