@@ -25,3 +25,17 @@ sensor_monitoring:
   camera_timeout: 1.0  # seconds
   lidar_timeout: 1.0   # seconds
   sensor_health_check_rate: 2.0  # Hz
+
+# Performance Monitoring Configuration
+performance_monitoring:
+  cpu_threshold: 80.0  # percentage
+  memory_threshold: 85.0  # percentage
+  latency_threshold: 100.0  # milliseconds
+  monitoring_rate: 1.0  # Hz
+  
+# Model Management Configuration
+model_management:
+  yolo_model_path: "models/yolo/yolov8n.pt"
+  pointpillars_model_path: "models/pointpillars/pointpillars.pth"
+  model_health_check_rate: 0.2  # Hz
+  performance_threshold: 0.8
