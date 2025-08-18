@@ -39,3 +39,17 @@ model_management:
   pointpillars_model_path: "models/pointpillars/pointpillars.pth"
   model_health_check_rate: 0.2  # Hz
   performance_threshold: 0.8
+
+# Error Handling Configuration
+error_handling:
+  error_reporting_enabled: true
+  critical_error_threshold: 5
+  error_logging_level: "INFO"
+  system_health_check_rate: 0.2  # Hz
+  
+# System Optimization Configuration
+system_optimization:
+  optimization_enabled: true
+  optimization_interval: 30.0  # seconds
+  performance_threshold: 0.8
+  auto_tuning_enabled: true
