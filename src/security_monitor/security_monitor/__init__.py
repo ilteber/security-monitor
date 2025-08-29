@@ -4,7 +4,7 @@ Security Monitor Package for ROS2
 This package provides comprehensive security monitoring capabilities for autonomous vehicles,
 including perception, localization, planning, and system health monitoring.
 
-Version: 0.3.0
+Version: 0.4.0
 Author: ilteber
 Email: ayvaci.ilteber@gmail.com
 
@@ -22,4 +22,6 @@ Components:
 - Health Monitor: System health monitoring
 - System Optimizer: Automatic system optimization
 - Error Handler: Error handling and monitoring
+- Analytics: Data analytics and statistics
+- Notification System: Alert and notification management
 """
