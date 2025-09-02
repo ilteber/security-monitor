@@ -25,7 +25,31 @@ install(PROGRAMS
   security_monitor/emergency_handler.py
   security_monitor/ml_detector.py
   security_monitor/sensor_fusion.py
+  security_monitor/model_manager.py
+  security_monitor/weather_monitor.py
+  security_monitor/performance_monitor.py
+  security_monitor/data_logger.py
+  security_monitor/health_monitor.py
+  security_monitor/analytics.py
+  security_monitor/notification_system.py
+  security_monitor/optimizer.py
+  security_monitor/error_handler.py
+  security_monitor/final_integration.py
+  security_monitor/api/server.py
+  security_monitor/api_client.py
   DESTINATION lib/${PROJECT_NAME}
+)
+
+# Install launch files
+install(DIRECTORY
+  launch
+  DESTINATION share/${PROJECT_NAME}/
+)
+
+# Install config files
+install(DIRECTORY
+  config
+  DESTINATION share/${PROJECT_NAME}/
 )
 
 if(BUILD_TESTING)
