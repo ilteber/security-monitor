@@ -2,3 +2,35 @@
 build/
 install/
 log/
+
+# ML models
+models/*/*.pth
+models/*/*.pt
+
+# ML Model files (exclude heavy model downloads)
+*.pt
+*.pth
+*.onnx
+*.h5
+*.pb
+*.tflite
+*.bin
+*.safetensors
+
+# Model directories
+models/yolo/*.pt
+models/pointpillars/*.pth
+models/*/weights/
+models/*/checkpoints/
+
+# Large data files
+*.pkl
+*.joblib
+*.npy
+*.npz
+
+# ML training artifacts
+runs/
+logs/
+wandb/
+tensorboard_logs/
